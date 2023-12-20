@@ -1,19 +1,26 @@
 // Some code thanks to @chrisgannon
-var tog = 1;
-$('#fordark').css('background-color', '#292929')
-$('.bold').css('color', '#dcdcdc')
-$('.profile').css('background', '#292929')
-$('.profile').css('color', '#dcdcdc')
-$('.profile h1').css('color', '#dcdcdc')
-$('.profile .list-titles').css('color', '#dcdcdc')
+if(Cookies.get('theme') == undefined) {
+  Cookies.set('theme', 1);
+}
+tog = cookie = Cookies.get('theme');
+console.log(cookie);
+if(cookie == 1) {
+  $('#fordark').css('background-color', '#292929')
+  $('.bold').css('color', '#dcdcdc')
+  $('.profile').css('background', '#292929')
+  $('.profile').css('color', '#dcdcdc')
+  $('.profile h1').css('color', '#dcdcdc')
+  $('.profile .list-titles').css('color', '#dcdcdc')
+} else {
+  $('#fordark').css('background-color', '#fff')
+  $('.bold').css('color', '#4a4e51')
+  $('.profile').css('background', '#fff')
+  $('.profile').css('color', '#4a4e51')
+  $('.profile h1').css('color', '#4a4e51')
+  $('.profile .list-titles').css('color', '#4a4e51')
+  $('#checkbox').prop('checked', true)
+}
 function change_theme() {
-  // var theme = document.getElementById("theme");
-  // console.log(theme.href);
-  // if(theme.href == "http://localhost/my_portfoliyo/style.css") {
-  //   document.getElementById("theme").href = "style2.css"
-  // } else {
-  //   document.getElementById("theme").href = "style.css"
-  // }
   if(tog == 0) {
     $('#fordark').css('background-color', '#292929')
     $('.bold').css('color', '#dcdcdc')
@@ -31,6 +38,7 @@ function change_theme() {
     $('.profile .list-titles').css('color', '#4a4e51')
     tog = 0;
   }
+  Cookies.set('theme', tog);
 
 }
 
