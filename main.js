@@ -4,7 +4,7 @@ if(Cookies.get('theme') == undefined) {
 }
 tog = cookie = Cookies.get('theme');
 console.log(cookie);
-if(cookie == 1) {
+if(cookie == 1 || cookie == undefined){
   $('#fordark').css('background-color', '#292929')
   $('.bold').css('color', '#dcdcdc')
   $('.profile').css('background', '#292929')
