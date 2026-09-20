@@ -1,76 +1,50 @@
-// Some code thanks to @chrisgannon
-if(Cookies.get('theme') == undefined) {
-  Cookies.set('theme', 1);
-}
-tog = cookie = Cookies.get('theme');
-console.log(cookie);
-if(cookie == 1 || cookie == undefined){
-  $('#fordark').css('background-color', '#292929')
-  $('.bold').css('color', '#dcdcdc')
-  $('.profile').css('background', '#292929')
-  $('.profile').css('color', '#dcdcdc')
-  $('.profile h1').css('color', '#dcdcdc')
-  $('.profile .list-titles').css('color', '#dcdcdc')
-} else {
-  $('#fordark').css('background-color', '#fff')
-  $('.bold').css('color', '#4a4e51')
-  $('.profile').css('background', '#fff')
-  $('.profile').css('color', '#4a4e51')
-  $('.profile h1').css('color', '#4a4e51')
-  $('.profile .list-titles').css('color', '#4a4e51')
-  $('#checkbox').prop('checked', true)
-}
-function change_theme() {
-  if(tog == 0) {
-    $('#fordark').css('background-color', '#292929')
-    $('.bold').css('color', '#dcdcdc')
-    $('.profile').css('background', '#292929')
-    $('.profile').css('color', '#dcdcdc')
-    $('.profile h1').css('color', '#dcdcdc')
-    $('.profile .list-titles').css('color', '#dcdcdc')
-    tog = 1;
+// Theme toggle (persisted in localStorage)
+var root = document.documentElement;
+var checkbox = document.getElementById('checkbox');
+
+function applyTheme(theme) {
+  if (theme === 'dark') {
+    root.setAttribute('data-theme', 'dark');
+    checkbox.checked = false;
   } else {
-    $('#fordark').css('background-color', '#fff')
-    $('.bold').css('color', '#4a4e51')
-    $('.profile').css('background', '#fff')
-    $('.profile').css('color', '#4a4e51')
-    $('.profile h1').css('color', '#4a4e51')
-    $('.profile .list-titles').css('color', '#4a4e51')
-    tog = 0;
+    root.setAttribute('data-theme', 'light');
+    checkbox.checked = true;
   }
-  Cookies.set('theme', tog);
-
 }
 
-var select = function(s) {
-    return document.querySelector(s);
-  }
-  
-  function randomBetween(min,max)
-  {
-      var number = Math.floor(Math.random()*(max-min+1)+min);
-    
-      if ( number !== 0 ){
-        return number;
-      }else {
-        return 0.5;
-      }
-  }
-  
-  var tl = new TimelineMax();
-  
-  for(var i = 0; i < 20; i++){
-  
-    var t = TweenMax.to(select('.bubble' + i), randomBetween(1, 1.5), {
-      x: randomBetween(12, 15) * (randomBetween(-1, 1)),
-      y: randomBetween(12, 15) * (randomBetween(-1, 1)), 
-      repeat:-1,
-      repeatDelay:randomBetween(0.2, 0.5),
-      yoyo:true,
-      ease:Elastic.easeOut.config(1, 0.5)
-    })
-  
-    tl.add(t, (i+1)/0.6)
-  }
-  
-  tl.seek(50);
+var savedTheme = null;
+try {
+  savedTheme = localStorage.getItem('theme');
+} catch (e) {}
+
+applyTheme(savedTheme === 'light' ? 'light' : 'dark');
+
+checkbox.addEventListener('change', function () {
+  var theme = checkbox.checked ? 'light' : 'dark';
+  applyTheme(theme);
+  try {
+    localStorage.setItem('theme', theme);
+  } catch (e) {}
+});
+
+// Mobile nav toggle
+var navToggle = document.getElementById('navToggle');
+var mainNav = document.getElementById('mainNav');
+
+navToggle.addEventListener('click', function () {
+  var isOpen = mainNav.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', isOpen);
+});
+
+mainNav.querySelectorAll('a').forEach(function (link) {
+  link.addEventListener('click', function () {
+    mainNav.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', false);
+  });
+});
+
+// Footer year
+var yearEl = document.getElementById('year');
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}

@@ -1,275 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Profile</title>
-  </head>
-  <body>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" id="theme" href="style.css">
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <div class="resume-wrapper">
-      <section class="profile section-padding">
-        <div class="container">
-          <div class="picture-resume-wrapper">
-            <div class="picture-resume">
-              <span><img
-                  src="profile_image.jpg"
-                  alt=""></span>
-              <svg version="1.1" viewBox="0 0 350 350">
-                <defs>
-                  <filter id="goo">
-                    <feGaussianBlur
-                      in="SourceGraphic"
-                      stdDeviation="8"
-                      result="blur"
-                    />
-                    <feColorMatrix
-                      in="blur"
-                      mode="matrix"
-                      values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -9"
-                      result="cm"
-                    />
-                  </filter>
-                </defs>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Priyank Pansuriya | Python (Flask) / Laravel Developer</title>
+  <meta name="description" content="Portfolio of Priyank Pansuriya, a Python (Flask) and Laravel developer specializing in scalable backend systems, automation tools, and RESTful APIs." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">PP</a>
 
-                <g filter="url(#goo)">
-                  <circle
-                    id="main_circle"
-                    class="st0"
-                    cx="171.5"
-                    cy="175.6"
-                    r="130"
-                  />
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-                  <circle
-                    id="circle"
-                    class="bubble0 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                  <circle
-                    id="circle"
-                    class="bubble1 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                  <circle
-                    id="circle"
-                    class="bubble2 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                  <circle
-                    id="circle"
-                    class="bubble3 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                  <circle
-                    id="circle"
-                    class="bubble4 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                  <circle
-                    id="circle"
-                    class="bubble5 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                  <circle
-                    id="circle"
-                    class="bubble6 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                  <circle
-                    id="circle"
-                    class="bubble7 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                  <circle
-                    id="circle"
-                    class="bubble8 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                  <circle
-                    id="circle"
-                    class="bubble9 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                  <circle
-                    id="circle"
-                    class="bubble10 st1"
-                    cx="171.5"
-                    cy="175.6"
-                    r="122.7"
-                  />
-                </g>
-              </svg>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div class="name-wrapper">
-            <h1>Priyank <br />Pansuriya</h1>
-            <!-- YOUR NAME AND LAST NAME  -->
-          </div>
-          <div class="clearfix"></div>
-          <div class="contact-info clearfix">
-            <ul class="list-titles">
-              <li>Call</li>
-              <li>Mail</li>
-              <!-- <li>Web</li> -->
-              <li>Home</li>
-            </ul>
-            <ul class="list-content">
-              <li>+91 7487873740</li>
-              <!-- YOUR PHONE NUMBER  -->
-              <li>priyankpansuriya123@gmail.com</li>
-              <!-- YOUR EMAIL -->
-              <!-- <li><a href="#">janderson.com</a></li> -->
-              <!-- YOUR WEBSITE  -->
-              <li>193, vrundavan soc, Chhaprabhatha, surat</li>
-              <!-- YOUR STATE AND COUNTRY  -->
-            </ul>
-          </div>
-          <div class="contact-presentation">
-            <!-- YOUR PRESENTATION RESUME  -->
-            <p>
-              <span class="bold">About Me</span> Hello, I'm Priyank Pansuriya, a passionate software developer with hands-on experience in Python, Laravel, and CodeIgniter. I specialize in building efficient, scalable applications and have worked on both automation projects and web development. I hold a Bachelor of Computer Applications (BCA) from Vivekanand College and am always eager to learn new technologies and take on challenging projects that push my skills further.
-            </p>
-          </div>
-          <div class="contact-social clearfix">
-            <ul class="list-titles">
-              <li>Instagram</li>
-              <li>Github</li> 
-            </ul>
-            <ul class="list-content">
-              <!-- REMEMBER TO PUT THE URL ON THE HREF TAG  -->
-              <li><a href="https://www.instagram.com/priyank_pansuriya_222/" target="_blank">@priyanl_pansuriya_222</a></li>
-              <!-- YOUR TWITTER USER  -->
-              <li><a href="https://github.com/Priyank222" target="_blank">@Priyank222</a></li>
-              <!-- YOUR DRIBBBLE USER  -->
-              <!-- <li><a href="">janderson</a></li> -->
-              <!-- YOUR BEHANCE USER  -->
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="experience section-padding">
+      <div class="header-actions">
         <div class="toggal">
-          <input type="checkbox" class="checkbox" id="checkbox" onclick="change_theme()">
+          <input type="checkbox" class="checkbox" id="checkbox" />
           <label for="checkbox" class="checkbox-label">
             <i class="fas fa-moon"></i>
             <i class="fas fa-sun"></i>
             <span class="ball"></span>
           </label>
         </div>
-        <div class="container">
-          <h3 class="experience-title">Experience</h3>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
 
-          <div class="experience-wrapper">
-            <div class="company-wrapper clearfix">
-              <div class="experience-title">Keylogic Infotech</div>
-              <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-              <div class="time">Dec 2023 - Present</div>
-              <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-            </div>
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero section-padding">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Hi, I'm</p>
+          <h1>Priyank Pansuriya</h1>
+          <p class="role">Python (Flask) / Laravel Developer</p>
+          <p class="lead">
+            Software developer with 3+ years of experience building scalable backend
+            systems, automation tools, and RESTful APIs — with real-time systems using
+            WebSockets and design automation using Adobe Illustrator (ExtendScript).
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            <a href="#projects" class="btn btn-outline">View Projects</a>
+          </div>
+          <ul class="hero-social">
+            <li>
+              <a href="https://github.com/Priyank222" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:priyankpansuriya123@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+917487873740" aria-label="Phone">
+                <i class="fas fa-phone"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-            <div class="job-wrapper clearfix">
-              <div class="experience-title">Laravel/(HTML/CSS/JS) Developer</div>
-              <!-- JOB TITLE  -->
-              <div class="company-description">
-                <p>
-                  Developed an end-to-end automation system using Python, integrating Adobe Illustrator through ExtendScript. Created RESTful APIs to accept user designs, automate the design generation process, and return the final output via API.
-                </p>
-                <p>
-                  Contributed to the development and maintenance of an eCommerce platform using Laravel. Handled both backend code and database management to implement new features, optimize performance, and resolve issues across the application lifecycle.
-                </p>
-                <!-- JOB DESCRIPTION  -->
-              </div>
-            </div>
+        <div class="hero-picture">
+          <div class="picture-resume">
+            <img src="profile_image_1.png" alt="Priyank Pansuriya" class="portrait-img" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="company-wrapper clearfix">
-              <div class="experience-title">Artoon Solutions</div>
-              <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-              <div class="time">Jun 2022 - Nov 2023</div>
-              <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-            </div>
+    <!-- ABOUT -->
+    <section id="about" class="section-padding alt-bg">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <p class="about-text">
+            Hello, I'm Priyank Pansuriya, a passionate software developer with hands-on
+            experience in Python (Flask), Laravel, and CodeIgniter. I specialize in
+            building efficient, scalable applications and have worked on both automation
+            projects and web development — from real-time WebSocket systems to
+            RESTful APIs and caching layers with Redis and CloudFront. I hold a Bachelor
+            of Computer Applications (BCA) from Vivekanand College and am always eager
+            to learn new technologies and take on challenging projects that push my
+            skills further.
+          </p>
+          <ul class="about-facts">
+            <li><i class="fas fa-briefcase"></i><span>3+ years of professional experience</span></li>
+            <li><i class="fas fa-graduation-cap"></i><span>BCA, Vivekanand College (CGPA 7.75, 2022)</span></li>
+            <li><i class="fas fa-location-dot"></i><span>Surat, Gujarat, India</span></li>
+            <li><i class="fas fa-language"></i><span>English &amp; Hindi (fluent), Gujarati (native)</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-            <div class="job-wrapper clearfix">
-              <div class="experience-title">
-                PHP/Codeigniter Developer
-              </div>
-              <!-- JOB TITLE  -->
-              <div class="company-description">
-                <p>
-                  During my time at Artoon Solutions, I worked on a multi-platform application with Web, iOS, and Android frontends powered by the CodeIgniter backend. I managed database operations, Content Management System (CMS), and Application Programming Interfaces (APIs) for seamless communication between front and backends. My role involved troubleshooting, optimization, and collaboration across teams, contributing to a successful, cohesive, and efficient application experience.
-                </p>
-                <!-- JOB DESCRIPTION  -->
-              </div>
+    <!-- SKILLS -->
+    <section id="skills" class="section-padding">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3><i class="fas fa-code"></i> Languages</h3>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">PHP</span>
+              <span class="tag">JavaScript</span>
             </div>
           </div>
-          <!--Skill experience-->
+          <div class="skill-card">
+            <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+            <div class="tag-list">
+              <span class="tag">Laravel</span>
+              <span class="tag">Flask</span>
+              <span class="tag">CodeIgniter</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3><i class="fas fa-cloud"></i> Technologies</h3>
+            <div class="tag-list">
+              <span class="tag">WebSockets</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">Redis</span>
+              <span class="tag">AWS</span>
+              <span class="tag">CloudFront</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3><i class="fas fa-database"></i> Databases</h3>
+            <div class="tag-list">
+              <span class="tag">MySQL</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3><i class="fas fa-toolbox"></i> Tools</h3>
+            <div class="tag-list">
+              <span class="tag">Git</span>
+              <span class="tag">Adobe Illustrator (ExtendScript)</span>
+              <span class="tag">Zendesk API</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3><i class="fas fa-diagram-project"></i> Concepts</h3>
+            <div class="tag-list">
+              <span class="tag">MVC Architecture</span>
+              <span class="tag">API Design</span>
+              <span class="tag">Caching</span>
+              <span class="tag">Auto Scaling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="section-wrapper clearfix">
-            <h3 class="section-title">Skills</h3>
-            <!-- YOUR SET OF SKILLS  -->
-            <ul>
-              <li class="skill-percentage">Python</li>
-              <li class="skill-percentage">Laravel</li>
-              <li class="skill-percentage">Codeigniter/PHP</li>
-              <li class="skill-percentage">Mysql</li>
-              <li class="skill-percentage">Javascript</li>
-              <li class="skill-percentage">Jquery</li>
-              <li class="skill-percentage">HTML</li>
-              <li class="skill-percentage">CSS</li>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section-padding alt-bg">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <h3>Laravel/Python Developer</h3>
+              <span class="timeline-date">Dec 2023 &ndash; Present</span>
+            </div>
+            <p class="timeline-company">Keylogic Infotech &middot; Surat, Gujarat</p>
+            <ul class="timeline-list">
+              <li>Developed an end-to-end automation system using Python (Flask), integrating Adobe Illustrator through ExtendScript.</li>
+              <li>Created RESTful APIs to accept user designs, automate the design generation process, and return the final output via API.</li>
+              <li>Integrated WebSockets for real-time communication and status updates.</li>
+              <li>Built the system from scratch, including development, testing, and deployment on a Windows Server environment.</li>
+              <li>Contributed to the development and maintenance of an eCommerce platform using Laravel, handling backend code and database management.</li>
+              <li>Implemented Redis and CloudFront caching, and worked with auto-scaling server infrastructure.</li>
+              <li>Integrated Zendesk APIs to automate customer ticket responses via the OpenAI API.</li>
             </ul>
           </div>
 
-          <div class="section-wrapper clearfix">
-            <h3 class="section-title">Hobbies</h3>
-            <!-- DESCRIPTION OF YOUR HOBBIES -->
-            <p>
-              Apart from my professional endeavors, I am deeply passionate about two main hobbies: learning new technologies and exploring various games.
-
-
-            </p>
-
-            <p>
-              These hobbies serve as both a source of recreation and a means of personal development for me. They fuel my curiosity, keep me motivated, and provide a healthy balance between work and leisure in my life.
-            </p>
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <h3>CodeIgniter Developer</h3>
+              <span class="timeline-date">Jun 2022 &ndash; Nov 2023</span>
+            </div>
+            <p class="timeline-company">Artoon Solutions &middot; Surat, Gujarat</p>
+            <ul class="timeline-list">
+              <li>Worked on a multi-platform application with Web, iOS, and Android frontends powered by a CodeIgniter backend.</li>
+              <li>Managed database operations, CMS, and APIs to ensure smooth communication between frontend and backend systems.</li>
+              <li>Handled troubleshooting and performance optimization to improve reliability and user experience.</li>
+              <li>Collaborated with cross-functional teams to deliver a cohesive and efficient application.</li>
+            </ul>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <div class="clearfix" id = "fordark"></div>
+    <!-- EDUCATION -->
+    <section id="education" class="section-padding">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <h3>Bachelor of Computer Applications (BCA)</h3>
+              <span class="timeline-date">2022</span>
+            </div>
+            <p class="timeline-company">Vivekanand College &middot; CGPA: 7.75</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section-padding alt-bg">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">A few things I've built. More coming soon.</p>
+
+        <div class="projects-grid">
+          <!--
+            TEMPLATE: duplicate this .project-card block for each real project.
+            Replace the icon/title/description/tags/links below.
+          -->
+          <article class="project-card project-card--placeholder">
+            <div class="project-thumb">
+              <i class="fas fa-magnifying-glass"></i>
+            </div>
+            <div class="project-body">
+              <h3>Faceted Search with OpenSearch</h3>
+              <p>A product/catalog search demo with faceted filtering (categories, price, attributes), instant results, and relevance ranking powered by OpenSearch.</p>
+              <div class="tag-list">
+                <span class="tag">OpenSearch</span>
+                <span class="tag">Faceted Search</span>
+                <span class="tag">Coming soon</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-outline disabled" aria-disabled="true">Live Demo</a>
+                <a href="#" class="btn btn-sm btn-outline disabled" aria-disabled="true">Source Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have a project in mind or just want to say hi? My inbox is open.</p>
+
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:priyankpansuriya123@gmail.com">
+            <i class="fas fa-envelope"></i>
+            <span>priyankpansuriya123@gmail.com</span>
+          </a>
+          <a class="contact-card" href="tel:+917487873740">
+            <i class="fas fa-phone"></i>
+            <span>+91 74878 73740</span>
+          </a>
+          <a class="contact-card" href="https://github.com/Priyank222" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+            <span>github.com/Priyank222</span>
+          </a>
+          <div class="contact-card contact-card--static">
+            <i class="fas fa-location-dot"></i>
+            <span>Surat, Gujarat, India</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Priyank Pansuriya. All rights reserved.</p>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-  </body>
-</html>
+  </footer>
 
+  <script src="main.js"></script>
+</body>
+</html>
